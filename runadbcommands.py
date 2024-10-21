@@ -1,8 +1,8 @@
 import subprocess
 import time
 
-adb_path = "C:\\Users\\Lukio-4090\\OneDrive\\Desktop\\platform-tools\\adb.exe"
-fastboot_path = "C:\\Users\\Lukio-4090\\OneDrive\\Desktop\\platform-tools\\fastboot.exe"
+adb_path = "C:\\adb\\platform-tools\\adb.exe"
+fastboot_path = "C:\\adb\\platform-tools\\fastboot.exe"
 
 def run_adb_command(device, command):
     subprocess.run([adb_path, "-s", device, "shell", command])

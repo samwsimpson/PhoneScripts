@@ -5,8 +5,8 @@ import time
 import os
 
 # Define the path to the adb and fastboot executables
-adb_path = r"C:\Users\Lukio-4090\OneDrive\Desktop\platform-tools\adb.exe"
-fastboot_path = r"C:\Users\Lukio-4090\OneDrive\Desktop\platform-tools\fastboot.exe"
+adb_path = r"C:\adb\platform-tools\adb.exe"
+fastboot_path = r"C:\adb\platform-tools\fastboot.exe"
 
 # Function to get a list of connected devices
 def get_connected_devices():
@@ -107,7 +107,7 @@ def setup_userland(device_id):
 
         # Run the setup commands in the terminal
     ul_setup_commands2 = [
-        'curl -o- -k https://raw.githubusercontent.com/lukewrightmain/VerusCliMining/main/install.sh | bash',
+        'curl -o- -k https://github.com/samwsimpson/Android-Mining/blob/main/install.sh | bash',
     ]
 
     for command in ul_setup_commands:
